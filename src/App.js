@@ -34,13 +34,13 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`;
+    return `${day} ${month} ${date}, ${year}`;
   };
 
   return (
     <div className='App'>
       <div>
-        {dateBuilder(new Date())}
+        <h2>{dateBuilder(new Date())}</h2>
       </div>
       <Title />
       <Weather />
